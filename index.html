@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <title>Payment Form Example</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    </head>
+
+    <body>
+        <div class="container small">
+            <div class="card mt-3 mb-5">
+                <div class="card-header">
+                    <h4 class="text-left">Payment Form Example</h4>
+                </div>
+                
+                <div class="p-3 text-danger bg-danger-subtle border border-danger-subtle rounded-3 mt-3 mx-3">
+                  Some fields are missing
+                </div>
+                           
+                
+                <div class="card-body">
+                    <div class="row mb-3">
+                     
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cardNumber">Card #</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cvc">CVC #</label>
+                                <input type="text" class="form-control" id="cvc" placeholder="0000">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" id="amount" placeholder="Amount">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 ">
+
+                            <div class="form-group">
+                                <label for="fullName">First Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="">
+                            </div>
+
+                                                           
+                            <div class="form-group">
+
+                                <div class="mb-2">
+                                    <label class="mt-2 mb-2">We Accept:</label>
+                                </div>
+                                
+                                <div class="form-group bg-secondary-subtle p-2 rounded d-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="visa" value="visa">
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mastercard" value="mastercard">
+                                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dinersclub" value="dinersclub">
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="americanexpress" value="americanexpress">
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-amex"></i></label>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                                                       
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <select class="form-select" id="state">
+                                            <option selected value="pickastate">Pick a State</option>
+                                            <option value="spain">Spain</option>
+                                            <option value="france">France</option>
+                                            <option value="italy">Italy</option>
+                                            <option value="germany">Germany</option>
+                                        </select>
+                                 
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group ">
+                                        <label for="postalCode">Postal Code</label>
+                                        <input type="text" class="form-control" id="postalCode" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-2">
+                                <label for="message">Message</label>
+                                <textarea class="form-control mt-2" id="message" rows="3"></textarea>
+                                <h6 class="text-secondary small mt-2 fw-normal ">Add any notes here.</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-secondary me-2">Cancel</button>
+                    <button class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    </body>
+    
+</html>
+
+
